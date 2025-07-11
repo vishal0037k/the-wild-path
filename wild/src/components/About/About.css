@@ -1,0 +1,88 @@
+.about-section {
+  background-color: #fff8ed; /* soft cream background */
+  padding: 80px 20px;
+  color: #2e4e1f; /* forest green */
+  font-family: 'Georgia', serif;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border: 4px solid #e15f2f; /* rust orange border */
+}
+
+.about-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  margin-bottom: 30px;
+  text-align: center;
+   color: #2e4e1f;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #3b3b3b;
+  text-align: left;
+}
+
+.portfolio-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #e15f2f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.portfolio-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transition: left 0.4s ease;
+}
+
+.portfolio-button:hover {
+  background-color: #c34718;
+  transform: scale(1.05);
+}
+
+.portfolio-button:hover::after {
+  left: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .about-description {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .portfolio-button {
+    width: 100%;
+    text-align: center;
+  }
+}

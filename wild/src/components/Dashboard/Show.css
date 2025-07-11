@@ -1,0 +1,74 @@
+.show-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.show-title {
+  font-size: 2.2rem;
+  color: var(--green);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.show-details {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: var(--text-dark);
+}
+
+.media-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--rust);
+}
+
+.media-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.media-item {
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+}
+
+.media-item img,
+.media-item video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.download-btn {
+  display: block;
+  background-color: var(--rust);
+  color: #fff;
+  margin-top: 4px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.download-btn:hover {
+  background-color: var(--green);
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 10px 16px;
+  background-color: var(--green);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.back-btn:hover {
+  background-color: var(--rust);
+}

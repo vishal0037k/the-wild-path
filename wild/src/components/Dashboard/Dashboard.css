@@ -1,0 +1,109 @@
+.dashboard-container {
+  padding: 2rem 1rem;
+  background-color: #f8f5f0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.dashboard-text {
+  flex: 1 1 300px;
+}
+
+.dashboard-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2f4f4f;
+}
+
+.dashboard-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dashboard-buttons button {
+  background-color: #d2691e;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-buttons button:hover {
+  background-color: #a0522d;
+}
+
+.dashboard-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 768px) {
+  .dashboard-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dashboard-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .dashboard-text p {
+    font-size: 1rem;
+  }
+
+  .dashboard-buttons {
+    justify-content: center;
+  }
+
+  .dashboard-buttons button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .dashboard-text p {
+    font-size: 0.95rem;
+  }
+
+  .dashboard-buttons button {
+    font-size: 0.95rem;
+    padding: 0.65rem 1.2rem;
+  }
+}
